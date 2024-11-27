@@ -51,3 +51,9 @@ new_data = np.array([
 new_predictions = model.predict(new_data)
 
 print("Predictions for new data:", new_predictions)  # 1 means crying, 0 means not crying
+
+"""
+Observation: This was fun and pretty straightforward to set up. The accuracy isn't too bad for such a small dataset,
+but it would be cool to try this with more realistic data or even add more features. Maybe the next step
+could be exploring a different algorithm or visualizing the decision boundaries. Definitely feeling like I learned something new here!
+"""
