@@ -12,7 +12,6 @@ from sklearn.datasets import fetch_california_housing
 california = fetch_california_housing()
 df = pd.DataFrame(california.data, columns=california.feature_names)
 
-df['PRICE'] = california.target
 
 X = df.drop(columns=['PRICE'])  # This will be the features (we want to predict price)
 y = df['PRICE']  # This will be price targets
