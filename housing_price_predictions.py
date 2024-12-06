@@ -14,6 +14,10 @@ df = pd.DataFrame(california.data, columns=california.feature_names)
 
 df['PRICE'] = california.target
 
-print(df)
+X = df.drop(columns=['PRICE'])  # This will be the features (we want to predict price)
+y = df['PRICE']  # This will be price targets
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
 
 # More work to be done
